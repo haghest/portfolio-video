@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,15 +26,20 @@
     <meta name="twitter:image" content="/assets/meta.png" />
 
     <link rel="icon" type="image/x-icon" href="/assets/hello.png" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/dist/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
     <script src="/assets/playerjs.js" type="text/javascript"></script>
     <script async src="https://umami.haga.my.id/script.js" data-website-id="e7b3b181-b658-4732-be65-2466de31f505"></script>
+    <style>
+      body {
+        font-family: "Instrument Sans", sans-serif;
+      }
+    </style>
   </head>
-  <body class="font-[Inter] bg-[#F0F0F0] px-5">
+  <body class="font-[Instrument Sans] bg-[#F0F0F0] px-5">
     <div id="header" class="my-10 lg:my-28 flex items-center justify-between place-content-between max-w-5xl mx-auto">
       <div data-tilt data-tilt-glare="true" data-tilt-max="5" data-tilt-maxglare=".5">
         <img class="w-auto rounded-3xl hidden md:flex shadow-2xl" src="/assets/1632959684114.jpg" alt="" />
@@ -44,7 +49,7 @@
           Reach me at <a href="mailto:hi@haghest.my.id"><span class="font-semibold">hi@haghest.my.id</span></a>
         </p>
         <div class="mb-5 lg:mb-7">
-          <h1 class="text-5xl lg:text-6xl font-semibold leading-tight">
+          <h1 class="text-5xl lg:text-6xl font-semibold leading-snug">
             Hi <span class="inline-flex pt-4"><img class="h-14" src="/assets/hello.png" alt="" /></span> I’m Haghest, a video editor based in Bali, ID
           </h1>
         </div>
@@ -63,18 +68,17 @@
         </div>
       </div>
     </div>
-    <div id="videos" class="max-w-7xl mx-auto my-10">
+    <div id="videos" class="max-w-7xl mx-auto my-24">
       <div class="flex justify-between items-center my-10">
-        <h2 class="font-semibold inline-block text-4xl">Video Portfolio</h2>
-
+        <h2 class="font-bold inline-block text-4xl">Video Portfolio</h2>
         <a class="font-semibold text-[#9E9E9E] underline underline-offset-4 transition hover:text-black" href="https://www.youtube.com/playlist?list=PLcIGCRDJ14KBmrTh1RcD934qilw28qcpL" target="_blank" rel="noopener noreferrer">View more</a>
       </div>
 
-      <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-10 gap-y-5 lg:gap-y-10">
+      <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-10 gap-y-5 lg:gap-y-24">
         <div>
           <div id="player" class="rounded-md" data-umami-event="player"></div>
           <div class="my-4">
-            <h3 class="text-xl font-semibold">Hijau itu Kami</h3>
+            <h3 class="text-2xl font-bold">Hijau itu Kami</h3>
             <p class="text-sm text-[#989898]">Documentary</p>
           </div>
         </div>
@@ -115,9 +119,9 @@
         </div>
       </div>
     </div>
-    <div id="short" class="max-w-7xl mx-auto my-10">
+    <div id="short" class="max-w-7xl mx-auto my-24">
       <h2 class="font-semibold text-4xl mt-16 mb-8">Short Portfolio</h2>
-      <div class="mx-auto grid lg:grid-cols-5 grid-cols-2 md:grid-cols-3 gap-4 md:gap-7 gap-y-5 lg:gap-y-10">
+      <div class="mx-auto grid lg:grid-cols-4 grid-cols-2 md:grid-cols-3 gap-4 md:gap-7 gap-y-5 lg:gap-y-10">
         <div>
           <div id="player6" class="h-52"></div>
           <div class="my-4">
@@ -167,9 +171,6 @@
         file: "/assets/Vertical Script 002 Compressed.mp4",
         player: 2,
       });
-    </script>
-    <script>
-      umami.track("player1");
     </script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="/node_modules/tilt.js/src/tilt.jquery.js"></script>
